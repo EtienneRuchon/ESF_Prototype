@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="1254.0" style="-fx-background-color: #6B534F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerChat">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cad5e4" height="743.0" stroke="#02221d" strokeType="INSIDE" width="1254.0" />
+      <AnchorPane prefHeight="743.0" prefWidth="272.0" style="-fx-background-color: #5C4744;" styleClass="365946">
+         <children>
+            <Pane prefHeight="743.0" prefWidth="272.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6c5ee" height="743.0" stroke="BLACK" strokeType="INSIDE" width="272.0" />
+                  <Button fx:id="CouleurContact" layoutY="393.0" mnemonicParsing="false" onAction="#handleButtonContact" onMouseEntered="#TestEnteredCouleurContact" onMouseExited="#TestExitCouleurContact" prefHeight="75.0" prefWidth="272.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Contact" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CouleurMeeting" layoutX="1.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleButtonMeeting" onMouseEntered="#TestEnteredCouleurMeeting" onMouseExited="#TestExitCouleurMeeting" prefHeight="75.0" prefWidth="272.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Meeting" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CouleurChat" layoutX="1.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonChat" onMouseEntered="#TestEnteredCouleurChat" onMouseExited="#TestExitCouleurChat" prefHeight="75.0" prefWidth="288.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Chat" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CouleurHome" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonHome" onMouseEntered="#TestEnteredCouleurHome" onMouseExited="#TestExitCouleurHome" prefHeight="75.0" prefWidth="272.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Home" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="40.0" layoutY="49.0" prefHeight="72.0" prefWidth="193.0" style="-fx-font-family: Wishingly; -fx-font-size: 50;" text="ZoomPlus" textFill="#3b649a">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="154.0" layoutY="646.0" prefHeight="41.0" prefWidth="84.0" style="-fx-font-family: 'Wishingly'; -fx-font-size: 28;" text="Support" textFill="#006fff" />
+                  <Button alignment="BOTTOM_LEFT" layoutX="142.0" layoutY="614.0" mnemonicParsing="false" onAction="#handleButtonAdd" prefHeight="106.0" prefWidth="104.0" style="-fx-border-radius: 9999999999999999999999999999999; -fx-border-color: #3b649a; -fx-background-color: transparent;" textFill="#abc996">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="18.0" left="20.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1210.0" layoutY="14.0" onMouseClicked="#exitButton" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/quit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="711.0" layoutY="689.0" style="-fx-font-family: 'Letters for Learners'; -fx-font-size: 22;" text="Page: " textFill="#abc996" />
+      <Label fx:id="CompteurPageFav" layoutX="752.0" layoutY="690.0" style="-fx-font-family: 'Letters for Learners'; -fx-font-size: 22;" text="0" textFill="#abc996" />
+      <VBox alignment="TOP_CENTER" layoutX="272.0" layoutY="29.0" prefHeight="62.0" prefWidth="982.0" spacing="5.0" />
+      <Line endX="-425.0" layoutX="1461.0" layoutY="111.0" startX="-876.0" stroke="#3b649a" strokeType="OUTSIDE" />
+      <Line endX="-521.0" layoutX="1500.0" layoutY="119.0" startX="-809.0" stroke="#3b649a" strokeType="OUTSIDE" />
+      <VBox alignment="TOP_CENTER" layoutX="292.0" layoutY="49.0" prefHeight="62.0" prefWidth="982.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="62.0" prefWidth="830.0" style="-fx-font-family: Wishingly;" text="Chat" textFill="#3c6499">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

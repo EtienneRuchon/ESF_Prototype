@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="1254.0" style="-fx-background-color: #6B534F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerHome">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cad5e4" height="743.0" stroke="#02221d" strokeType="INSIDE" width="1254.0" />
+        <AnchorPane prefHeight="743.0" prefWidth="272.0" style="-fx-background-color: #5C4744;">
+         <children>
+            <Pane prefHeight="743.0" prefWidth="272.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6c5ee" height="743.0" stroke="BLACK" strokeType="INSIDE" width="272.0" />
+                  <Button fx:id="CouleurContact" layoutY="393.0" mnemonicParsing="false" onAction="#handleButtonContact" onMouseEntered="#TestEnteredCouleurContact" onMouseExited="#TestExitCouleurContact" prefHeight="75.0" prefWidth="272.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Contact" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CouleurMeeting" layoutX="1.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleButtonMeeting" onMouseEntered="#TestEnteredCouleurMeeting" onMouseExited="#TestExitCouleurMeeting" prefHeight="75.0" prefWidth="272.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Meeting" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CouleurChat" layoutX="1.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonChat" onMouseEntered="#TestEnteredCouleurChat" onMouseExited="#TestExitCouleurChat" prefHeight="75.0" prefWidth="272.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Chat" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CouleurHome" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonHome" onMouseEntered="#TestEnteredCouleurHome" onMouseExited="#TestExitCouleurHome" prefHeight="75.0" prefWidth="288.0" style="-fx-background-color: #ffffffff; -fx-border-color: #3b649a; -fx-font-family: 'Letters for Learners'; -fx-font-size: 24;" text="Home" textFill="#b4bfcd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="40.0" layoutY="49.0" prefHeight="72.0" prefWidth="193.0" style="-fx-font-family: Wishingly; -fx-font-size: 50;" text="ZoomPlus" textFill="#3b649a">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="154.0" layoutY="646.0" prefHeight="41.0" prefWidth="84.0" style="-fx-font-family: 'Wishingly'; -fx-font-size: 28;" text="Support" textFill="#006fff" />
+                  <Button alignment="BOTTOM_LEFT" layoutX="142.0" layoutY="614.0" mnemonicParsing="false" onMouseClicked="#handleSupport" prefHeight="106.0" prefWidth="104.0" style="-fx-border-radius: 9999999999999999999999999999999; -fx-border-color: #3b649a; -fx-background-color: transparent;" textFill="#abc996">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="18.0" left="20.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+        </AnchorPane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1210.0" layoutY="14.0" onMouseClicked="#exitButton" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/quit.png" />
+         </image>
+      </ImageView>
+      <Line endX="-425.0" layoutX="1461.0" layoutY="98.0" startX="-876.0" stroke="#3b649a" strokeType="OUTSIDE" />
+      <Line endX="-521.0" layoutX="1500.0" layoutY="106.0" startX="-809.0" stroke="#3b649a" strokeType="OUTSIDE" />
+      <VBox alignment="TOP_CENTER" layoutX="292.0" layoutY="36.0" prefHeight="62.0" prefWidth="982.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="62.0" prefWidth="830.0" style="-fx-font-family: Wishingly;" text="Home" textFill="#3c6499">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button alignment="BOTTOM_LEFT" ellipsisString="8" layoutX="453.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#handleNewMeeting" prefHeight="106.0" prefWidth="288.0" style="-fx-border-radius: 9999999999999999999999999999999; -fx-border-color: #3b649a; -fx-background-color: transparent;" textAlignment="CENTER" textFill="#abc996" textOverrun="CLIP">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="18.0" left="20.0" />
+         </padding>
+      </Button>
+      <Button alignment="BOTTOM_LEFT" ellipsisString="8" layoutX="812.0" layoutY="275.0" mnemonicParsing="false" onMouseClicked="#handleJoinMeeting" prefHeight="106.0" prefWidth="288.0" style="-fx-border-radius: 9999999999999999999999999999999; -fx-border-color: #3b649a; -fx-background-color: transparent;" textAlignment="CENTER" textFill="#abc996" textOverrun="CLIP">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="18.0" left="20.0" />
+         </padding>
+      </Button>
+      <Button alignment="BOTTOM_LEFT" ellipsisString="8" layoutX="455.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#handleFolder" prefHeight="106.0" prefWidth="288.0" style="-fx-border-radius: 9999999999999999999999999999999; -fx-border-color: #3b649a; -fx-background-color: transparent;" textAlignment="CENTER" textFill="#abc996" textOverrun="CLIP">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="18.0" left="20.0" />
+         </padding>
+      </Button>
+      <Button alignment="BOTTOM_LEFT" ellipsisString="8" layoutX="811.0" layoutY="425.0" mnemonicParsing="false" onMouseClicked="#handleSchareScreen" prefHeight="106.0" prefWidth="288.0" style="-fx-border-radius: 9999999999999999999999999999999; -fx-border-color: #3b649a; -fx-background-color: transparent;" textAlignment="CENTER" textFill="#abc996" textOverrun="CLIP">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="18.0" left="20.0" />
+         </padding>
+      </Button>
+      <Button alignment="BOTTOM_LEFT" ellipsisString="8" layoutX="454.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#handleCalendar" prefHeight="106.0" prefWidth="288.0" style="-fx-border-radius: 9999999999999999999999999999999; -fx-border-color: #3b649a; -fx-background-color: transparent;" textAlignment="CENTER" textFill="#abc996" textOverrun="CLIP">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="18.0" left="20.0" />
+         </padding>
+      </Button>
+      <Label layoutX="530.0" layoutY="233.0" prefHeight="41.0" prefWidth="135.0" style="-fx-font-family: 'Wishingly'; -fx-font-size: 28;" text="New Meeting" textAlignment="CENTER" textFill="#006fff" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+      <Label layoutX="551.0" layoutY="385.0" prefHeight="41.0" prefWidth="97.0" style="-fx-font-family: 'Wishingly'; -fx-font-size: 28;" text="Calendar" textAlignment="CENTER" textFill="#006fff" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+      <Label layoutX="888.0" layoutY="308.0" prefHeight="41.0" prefWidth="135.0" style="-fx-font-family: 'Wishingly'; -fx-font-size: 28;" text="Join Meeting" textAlignment="CENTER" textFill="#006fff" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="458.0" prefHeight="41.0" prefWidth="141.0" style="-fx-font-family: 'Wishingly'; -fx-font-size: 28;" text="Schare Screen" textAlignment="CENTER" textFill="#006fff" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="6.0" layoutX="566.0" layoutY="533.0" prefHeight="41.0" prefWidth="67.0" style="-fx-font-family: 'Wishingly'; -fx-font-size: 28;" text="Folder" textAlignment="CENTER" textFill="#006fff" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="90.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
